@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinchan</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            background-color: rgb(89, 234, 207);
+            height: 800px;
+            width: 800px;
+            position: relative;
+            z-index: -1;
+        }
+        .main2{
+            position: absolute;
+            top: 1px;
+            left: 100px;
+            transform: rotate(17deg);
+        }
+        .a {
+            background-color: antiquewhite;
+            height: 400px;
+            width: 450px;
+            position: absolute;
+            border: 2px solid black;
+            border-top: 51px solid black;
+            border-bottom-left-radius: 250px;
+            border-top-left-radius: 250px;
+            border-top-right-radius: 210px;
+            border-right: none;
+            top: 37px;
+            left: 150px;
+            transform: rotate(-20deg);
+        }
+        .b {
+            background-color: antiquewhite;
+            height: 243px;
+            width: 250px;
+            border: 2px solid black;
+            position: absolute;
+            border-radius: 0 190px 190px 0;
+            top: 166.5px;
+            left: 479px;
+            z-index: -1;
+            transform: rotate(-19deg);
+        }
+        .e{
+            background-color: antiquewhite;
+            height: 130px;
+            width: 130px;
+            border: 3px solid black;
+            border-left: none;
+            border-top: none;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 160px;
+            border-top-right-radius: 50px;
+            transform: rotate(-230deg);
+            position: absolute;
+            top: 310px;
+            z-index: 1;
+            left: 90px;
+        }
+        .c{
+           border-right:29px solid transparent;
+           border-bottom: 114px solid black;
+           height: 0;
+           width: 0; 
+           position: absolute;  
+           top: 217px; 
+           left: 189.5px;
+           transform: skew(-29deg);
+        }
+        .ey1, .ey2, .ey3, .ey4 {
+            background-color: black;
+            height: 40px;
+            width: 110px;
+            border-radius: 30px;
+            position: absolute;
+            top: 200px;
+        }
+        .ey1 {
+            left: 210px;
+            transform: rotate(150deg);
+        }
+        .ey2 {
+            left: 265px;
+            transform: rotate(30deg);
+        }
+        .ey3 {
+            left: 410px;
+            transform: rotate(150deg);
+        }
+        .ey4 {
+            left: 465px;
+            transform: rotate(30deg);
+        }
+       
+        .l1, .l2 {
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            top: 260px;
+            border: solid 3px #000;
+            border-radius: 50%/100px 100px 0 0;
+            border-color: #000 transparent transparent transparent;
+        }
+        .l1 {
+            left: 180px;
+        }
+        .l2 {
+            left: 380px;
+        }
+        .eye1, .eye2 {
+            background-color: black;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 290px;
+        }
+        .eye1 {
+            left: 230px;
+        }
+        .eye2 {
+            left: 430px;
+        }
+        .g1, .g2, .g3, .g4, .g5, .g6 {
+            background-color: aliceblue;
+            position: absolute;
+            border-radius: 50%;
+        }
+        .g1 {
+            height: 20px;
+            width: 20px;
+            top: 345px;
+            left: 250px;
+        }
+        .g2 {
+            height: 40px;
+            width: 40px;
+            top: 310px;
+            left: 260px;
+        }
+        .g3 {
+            height: 10px;
+            width: 10px;
+            top: 350px;
+            left: 285px;
+        }
+        .g4 {
+            height: 20px;
+            width: 20px;
+            top: 345px;
+            left: 450px;
+        }
+        .g5 {
+            height: 40px;
+            width: 40px;
+            top: 310px;
+            left: 460px;
+        }
+        .g6 {
+            height: 10px;
+            width: 10px;
+            top: 350px;
+            left: 485px;
+        }
+        .b1, .b2 {
+            background-color: rgba(216, 112, 147, 0.853);
+            height: 50px;
+            width: 100px;
+            border: none;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 0px 0px 10px 5px palevioletred;
+        }
+        .b1 {
+            top: 410px;
+            left: 230px;
+        }
+        .b2 {
+            top: 400px;
+            left: 530px;
+        }
+        .m {
+            background-color: rgba(227, 60, 60, 0.993);
+            height: 130px;
+            width: 80px;
+            border: 1px solid black;
+            position: absolute;
+            top: 480px;
+            left: 380px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .s1, .s2, .s3, .s4, .s5, .s6 {
+            width: 3px;
+            height: 40px;
+            background-color: rgba(213, 22, 130, 0.274);
+            position: absolute;
+            transform: rotate(30deg);
+        }
+        .s1 {
+            top: 410px;
+            left: 250px;
+        }
+        .s2 {
+            top: 410px;
+            left: 270px;
+        }
+        .s3 {
+            top: 410px;
+            left: 290px;
+        }
+        .s4 {
+            top: 400px;
+            left: 550px;
+        }
+        .s5 {
+            top: 400px;
+            left: 570px;
+        }
+        .s6 {
+            top: 400px;
+            left: 590px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="main2">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="e"></div>
+    </div>
+    <div class="c"></div>
+    <div class="ey1"></div>
+    <div class="ey2"></div>
+    <div class="ey3"></div>
+    <div class="ey4"></div>
+    <div class="eye1"></div>
+    <div class="eye2"></div>
+    <div class="l1"></div>
+    <div class="l2"></div>
+    <div class="g1"></div>
+    <div class="g2"></div>
+    <div class="g3"></div>
+    <div class="g4"></div>
+    <div class="g5"></div>
+    <div class="g6"></div>
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="m"></div>
+    <div class="s1"></div>
+    <div class="s2"></div>
+    <div class="s3"></div>
+    <div class="s4"></div>
+    <div class="s5"></div>
+    <div class="s6"></div>
+</div>
+</body>
+</html>
